@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higor Santana - ADS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Seção do Nome (tela inteira) -->
+    <section class="fullscreen-section" id="header">
+        <div class="container">
+            <h1>Higor Santana</h1>
+            <h2>Analista e Desenvolvedor de Sistemas</h2>
+            
+            <!-- Botão do Currículo -->
+            <a href="SEU_LINK_DO_CURRICULO_AQUI.pdf" class="btn btn-cv" download>
+                <i class="fas fa-download"></i> Baixar Currículo
+            </a>
+            
+            <!-- Ícones de Redes Sociais -->
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/seu-perfil" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/seu-perfil" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:seu-email@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">↓</a>
+    </section>
+
+    <!-- Seção Sobre Mim (tela inteira) -->
+    <section class="fullscreen-section" id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Engenheiro de Software experiente com histórico em planejamento, desenvolvimento, arquitetura, escalonamento, segurança e manutenção de aplicações web em larga escala, microsserviços e APIs em ambientes críticos, atendendo milhões de usuários diariamente, para os setores financeiro, bancário, educacional e de segurança.</p>
+            <a href="#skills" class="btn">Ver Habilidades</a>
+        </div>
+        <a href="#skills" class="scroll-down">↓</a>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <!-- Frontend -->
+                <div class="skill-square">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                
+                <!-- Backend -->
+                <div class="skill-square">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                
+                <!-- Banco de Dados -->
+                <div class="skill-square">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Banco de Dados</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Experiência -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experiências</h2>
+            <div class="experience-item">
+                <h3>Engenheiro de Software Sênior - Empresa XYZ</h3>
+                <p class="experience-period">2020 - Presente</p>
+                <ul>
+                    <li>Liderou a arquitetura e desenvolvimento de uma plataforma bancária servindo 5 milhões de usuários diários</li>
+                    <li>Implementou soluções de escalonamento que reduziram custos em 30%</li>
+                    <li>Desenvolveu APIs críticas para o setor financeiro com 99.99% de disponibilidade</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Higor Santana. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Atualiza o ano automaticamente no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
